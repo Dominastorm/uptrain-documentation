@@ -1,6 +1,6 @@
 {
   "$schema": "https://mintlify.com/schema.json",
-  "name": "Starter Kit",
+  "name": "UpTrain",
   "logo": {
     "dark": "/logo/dark.png",
     "light": "/logo/light.png"
@@ -30,12 +30,12 @@
     {
       "name": "Changelog",
       "icon": "list",
-      "url": "https://mintlify.com"
+      "url": "https://github.com/uptrain-ai/uptrain/releases"
     },
     {
       "name": "Community",
       "icon": "discord",
-      "url": "https://mintlify.com/community"
+      "url": "https://discord.gg/zYXDMktp9P"
     }
   ],
   "navigation": [
@@ -58,8 +58,8 @@
     }
   ],
   "footerSocials": {
-    "twitter": "https://twitter.com/mintlify",
-    "github": "https://github.com/mintlify",
-    "linkedin": "https://www.linkedin.com/company/mintsearch"
+    "twitter": "https://twitter.com/UpTrainAI/",
+    "github": "https://github.com/uptrain-ai/uptrain/",
+    "linkedin": "https://www.linkedin.com/company/uptrain-ai/"
   }
 }
