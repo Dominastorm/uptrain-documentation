@@ -19,15 +19,9 @@
     }
   },
   "backgroundImage": "/images/background.png",
-  "topbarLinks": [
-    {
-      "name": "Documentation",
-      "url": "https://mintlify.com/docs"
-    }
-  ],
   "topbarCtaButton": {
-    "name": "Get Started",
-    "url": "https://github.com/mintlify/starter"
+    "type": "github",
+    "url": "https://github.com/uptrain-ai/uptrain"
   },
   "anchors": [
     {
