@@ -7,10 +7,18 @@
   },
   "favicon": "/favicon.png",
   "colors": {
-    "primary": "#0069ED",
-    "light": "#4D9CFF",
-    "dark": "#0050B4"
+    "primary": "#AB1CFC",
+    "light": "#C732FA",
+    "dark": "#9015E3",
+    "background": {
+      "dark": "#121212"
+    },
+    "anchors": {
+      "from": "#4d0076",
+      "to": "#b33eaf"
+    }
   },
+  "backgroundImage": "/images/background.png",
   "topbarLinks": [
     {
       "name": "Documentation",
