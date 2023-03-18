@@ -61,7 +61,8 @@
         "examples/fraud-detection",
         "examples/human-orientation-classification",
         "examples/deep-dive-examples",
-        "examples/shopping-cart-recommendation"
+        "examples/shopping-cart-recommendation",
+        "examples/ride-time-estimation"
       ]
     },
     {
