@@ -25,14 +25,19 @@
   },
   "anchors": [
     {
-      "name": "API Reference",
-      "icon": "rectangle-terminal",
-      "url": "api-reference"
-    },
-    {
       "name": "Changelog",
       "icon": "list",
       "url": "https://github.com/uptrain-ai/uptrain/releases"
+    },
+    {
+      "name": "Blog",
+      "icon": "newspaper",
+      "url": "https://uptrain.ai/blog"
+    },
+    {
+      "name": "Contributing",
+      "icon": "code",
+      "url": "contributing"
     },
     {
       "name": "Community",
@@ -42,8 +47,12 @@
   ],
   "navigation": [
     {
-      "group": "Home",
-      "pages": ["introduction", "features"]
+      "group": "Getting Started",
+      "pages": [
+        "getting-started/introduction", 
+        "getting-started/quickstart", 
+        "getting-started/key-features"
+      ]
     },
     {
       "group": "API Documentation",
