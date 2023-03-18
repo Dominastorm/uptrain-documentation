@@ -55,6 +55,12 @@
       ]
     },
     {
+      "group": "Examples",
+      "pages": [
+        "examples/text-summarization"
+      ]
+    },
+    {
       "group": "Contributing",
       "pages": [
         "contributing/development"
