@@ -60,7 +60,8 @@
         "examples/text-summarization",
         "examples/fraud-detection",
         "examples/human-orientation-classification",
-        "examples/deep-dive-examples"
+        "examples/deep-dive-examples",
+        "examples/shopping-cart-recommendation"
       ]
     },
     {
