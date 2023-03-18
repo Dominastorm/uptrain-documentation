@@ -1,16 +1,16 @@
 ---
 title: Text Summarization
-description: 
+description: Monitoring performance of a text summarization task in NLP
 ---
 
 
-**Overview**: In this example, we will see how to use UpTrain to monitor performance of a text summarization task in NLP. Summarization creates a shorter version of a document or an article that captures all the important information. For the same, we will be using a pretrained [text summarization model](https://huggingface.co/t5-small) (with T5 architecture) from [Huggingface](https://huggingface.co/docs/transformers/tasks/summarization). This model was trained on the [billsum dataset](https://huggingface.co/datasets/billsum).
+**Overview:** In this example, we will see how to use UpTrain to monitor performance of a text summarization task in NLP. Summarization creates a shorter version of a document or an article that captures all the important information. For the same, we will be using a pretrained [text summarization model](https://huggingface.co/t5-small) (with T5 architecture) from [Huggingface](https://huggingface.co/docs/transformers/tasks/summarization). This model was trained on the [billsum dataset](https://huggingface.co/datasets/billsum).
 
-**Why is monitoring needed**: Monitoring NLP tasks with traditional metrics (such as accuracy) in production is hard, as groud truth is unavailable (or extremely delayed when there is a human in the loop). And, hence, it becomes very important to develop techniques to monitor real time monitoring for tasks such as text summarization before important business metrics (such as customer satisfaction and revenue) are affected.
+**Why is monitoring needed:** Monitoring NLP tasks with traditional metrics (such as accuracy) in production is hard, as groud truth is unavailable (or extremely delayed when there is a human in the loop). And, hence, it becomes very important to develop techniques to monitor real time monitoring for tasks such as text summarization before important business metrics (such as customer satisfaction and revenue) are affected.
 
-**Problem**: In this example, the model was trained on the [billsum dataset](https://huggingface.co/datasets/billsum). This dataset contains the articles and their summarization of the US Congressional and California state bills. However, in production, we append some samples from the [wikihow dataset](https://github.com/mahnazkoupaee/WikiHow-Dataset). The WikiHow is a large-scale dataset using the online [WikiHow](http://www.wikihow.com/) knowledge base. As you can imagine, the two datasets are quite different. It would be interesting to see how the text summarization task performs in production 🤔
+**Problem:** In this example, the model was trained on the [billsum dataset](https://huggingface.co/datasets/billsum). This dataset contains the articles and their summarization of the US Congressional and California state bills. However, in production, we append some samples from the [wikihow dataset](https://github.com/mahnazkoupaee/WikiHow-Dataset). The WikiHow is a large-scale dataset using the online [WikiHow](http://www.wikihow.com/) knowledge base. As you can imagine, the two datasets are quite different. It would be interesting to see how the text summarization task performs in production 🤔
 
-**Solution**: We will be using UpTrain framework which provides an easy-to-configure way to log  training data, production data and model's predictions. We apply several techniques on theis logged data, such as clustering, data drift detection and customized signals, to monitor performance and raise alerts in case of any dip in model's performance 🚀
+**Solution:** We will be using UpTrain framework which provides an easy-to-configure way to log  training data, production data and model's predictions. We apply several techniques on theis logged data, such as clustering, data drift detection and customized signals, to monitor performance and raise alerts in case of any dip in model's performance 🚀
 
 ### Install Required packages
 - [PyTorch](https://pytorch.org/get-started/locally/): Deep learning framework.
@@ -107,7 +107,7 @@ print({"model_input_text_to_summarize": sample_text}, "\n")
 print({"model_output_summary": summary})
 ```
 
-```json
+```
 {'model_input_text_to_summarize': ' Bring the rice to a boil, and then reduce the heat to a simmer for about 20 minutes while covered.;\n, Stir well and fluff the rice with a fork.\n\n,, Remove the stem, veins, and seeds from your jalapeño pepper. Slice it into strips using a cutting knife. Set aside.\n\n, Peel and seed the cucumber, and then slice it into strips with a cutting knife. Slice the avocado into small slices as well. Set aside.\n\n, The ropes should be long enough to spread on the seaweed sheets., Cover it with a sheet of nori.,, Repeat again with another seaweed sheet.,,, Place the sushi on a serving plate. Sprinkle over the seeds and dump into the sauce if desired. Enjoy!\n\n'} 
 
 {'model_output_summary': ['bring the rice to a boil, and then reduce the heat to a simmer for about']}
