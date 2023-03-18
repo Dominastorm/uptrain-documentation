@@ -57,7 +57,10 @@
     {
       "group": "Examples",
       "pages": [
-        "examples/text-summarization"
+        "examples/text-summarization",
+        "examples/fraud-detection",
+        "examples/human-orientation-classification",
+        "examples/deep-dive-examples"
       ]
     },
     {
