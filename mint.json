@@ -55,6 +55,16 @@
       ]
     },
     {
+      "group": "Monitors",
+      "pages": [
+        "monitors/concept-drift",
+        "monitors/data-drift",
+        "monitors/data-integrity",
+        "monitors/edge-case-detection",
+        "monitors/model-bias"
+      ]
+    },
+    {
       "group": "Examples",
       "pages": [
         "examples/text-summarization",
