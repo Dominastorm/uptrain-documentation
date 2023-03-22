@@ -29,12 +29,13 @@ concept_drift_check = {
 
 We recommend checking out the [fraud detection example](https://github.com/uptrain-ai/uptrain/tree/main/examples/fraud_detection) to see concept drift detection with DDM in action. Here's the accuracy plot shown on the dashboard when we add a concept drift check in the config:
 
-| <center> <img width="500" src="https://uptrain-demo.s3.us-west-1.amazonaws.com/fraud_detection/concept_drift_avg_acc.gif"/> </center>                                     |
-| ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| <center>Model performance over time with model performance reducing at time 110k </center>                                                                                                                                                                                                   | 
 
-Further, UpTrain automatically sends an alert (which can be integrated with Slack or E-mail) when concept drift is detected, as shown below.
+<Frame caption="Model performance over time with model performance reducing at time 110k">
+  <img width="400" src="https://uptrain-demo.s3.us-west-1.amazonaws.com/fraud_detection/concept_drift_avg_acc.gif"/>
+</Frame>
 
-| <center> <img width="500" src="/images/model-degradation-alert.png"/> </center>                                     |
-| ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| <center>A model degradation alert sent by UpTrain </center>                                                                                                                                                                                                                                  | 
+Further, UpTrain automatically sends an alert (which can be integrated with Slack or E-mail) when concept drift is detected, as shown below:
+
+<Frame caption="A model degradation alert sent by UpTrain">
+  <img width="500" src="/images/model-degradation-alert.png"/>
+</Frame>
