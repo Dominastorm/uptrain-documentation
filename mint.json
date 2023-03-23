@@ -61,7 +61,8 @@
         "monitors/data-drift",
         "monitors/data-integrity",
         "monitors/edge-case-detection",
-        "monitors/model-bias"
+        "monitors/model-bias",
+        "monitors/custom-monitors"
       ]
     },
     {
