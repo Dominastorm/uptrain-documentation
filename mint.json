@@ -66,6 +66,21 @@
       ]
     },
     {
+      "group": "Visuals",
+      "pages": [
+        "visuals/shap",
+        "visuals/umap",
+        "visuals/tsne"
+      ]
+    },
+    {
+      "group": "Statistics",
+      "pages": [
+        "statistics/distances",
+        "statistics/convergence-analysis"
+      ]
+    },
+    {
       "group": "Examples",
       "pages": [
         "examples/text-summarization",
