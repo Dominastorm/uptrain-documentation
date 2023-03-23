@@ -7,10 +7,10 @@ Drift detection is essential in ensuring the continued accuracy and performance 
 
 Here is a replay of a data drift monitor from the UpTrain dashboard for the [human orientation classification](https://github.com/uptrain-ai/uptrain/blob/main/examples/human_orientation_classification/run.ipynb) example:
 
-| <center> <img width="500" src="https://uptrain-demo.s3.us-west-1.amazonaws.com/human_orientation_classification/1_data_drift_and_edge_cases.gif"/> </center> |
-| -------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| <center>Data Drift monitor in the UpTrain dashboard</center>                                                                                                 | 
 
+<Frame caption="Data Drift monitor in the UpTrain dashboard">
+  <img width="500" src="https://uptrain-demo.s3.us-west-1.amazonaws.com/human_orientation_classification/1_data_drift_and_edge_cases.gif"/>
+</Frame>
 
 The following is the example of a code snippet to add a data drift monitor in the UpTrain framework.
 
@@ -43,23 +43,23 @@ We recommend checking out the [human orientation classification](https://github.
 
 In that example, once we add a check for data drift in the UpTrain config, we see the following line chart for earth-moving distances between production and training datasets.
 
-| <center> <img width="500" src="/images/earth-moving-distance.png"/> </center>                                    |
-| -----------------------------------------------------------------------------------------------------------------|
-| <center>Earth moving distance vs number of predictions</center>                                                  | 
+<Frame caption="Earth moving distance vs number of predictions">
+  <img width="500" src="/images/earth-moving-distance.png"/>
+</Frame>
 
 We can observe that in production, the model sometimes encounters new data points which were not a part of the training data since they have higher earth-moving distances.
 
 Additionally, when we cluster the features and compare their sizes in the training and production datasets, we observe that the cluster distribution is starkly different for a few clusters. Later, we identified these points as points in the "pushup" position in human orientation, which were not a part of the training dataset.
 
-| <center> <img width="500" src="/images/feature-distribution.png"/> </center>                                     |
-| -----------------------------------------------------------------------------------------------------------------|
-| <center>Distribution of features across reference and production dataset </center>                               | 
+
+<Frame caption="Distribution of features across reference and production dataset">
+  <img width="500" src="/images/feature-distribution.png"/>
+</Frame>
 
 Finally, UpTrain automatically sends an alert (which can be integrated with Slack or E-mail) when data drift is detected, as shown below:
 
-| <center> <img width="500" src="/images/data-drift-alert.png"/> </center>                                         |
-| -----------------------------------------------------------------------------------------------------------------|
-| <center>Data Drift alert on UpTrain dashboard </center>                                                          | 
-
+<Frame caption="Data Drift alert on UpTrain dashboard">
+  <img width="500" src="/images/data-drift-alert.png"/>
+</Frame>
 
 Overall, UpTrain's drift detection tools provide a powerful means of identifying and addressing data drift in machine learning models, ensuring their continued production accuracy and performance.
